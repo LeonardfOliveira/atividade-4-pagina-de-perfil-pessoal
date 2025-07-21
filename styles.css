@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #0077cc;
+  --cor-secundaria: #f4f4f4;
+  --cor-texto: #333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Layout com Flexbox */
+header, nav, main, aside, footer {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: darkblue;
+}
+
+/* Pseudo-elemento */
+section::before {
+  content: "➤ ";
+  color: var(--cor-primaria);
+}
+
+article::after {
+  content: " 🧠";
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    padding: 10px;
+  }
+}
