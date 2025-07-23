@@ -1,74 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Perfil</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Portfolio profissional</title>
 </head>
+
 <body>
 
+  <!-- menu de acesso -->
   <header>
-    <img src="sua-foto.jpg" alt="Minha Foto">
-    <h1>Seu Nome</h1>
-    <p>Slogan ou frase de impacto</p>
+    <div class="figure">
+      <img src="logo.png" width="300" height="50" alt="Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#sobre-mim"><strong>Sobre mim</strong></a></li>
+        <li><a href="#habilidades-tecnicas"><strong>Hard Skills</strong></a></li>
+        <li><a href="#habilidades-comportamentais"><strong>Soft Skills</strong></a></li>
+        <li><a href="#contato" id="Contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-
+  <!-- conteúdo principal -->
   <main>
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Breve descrição pessoal.</p>
-    </section>
+    <aside>
+      <div class="about-content">
+        <h2 class="page-heading"><span>Leonardo Oliveira</span></h2>
+        <section id="sobre-mim">
+          <h2 class="section-title"><span>Sobre mim</span></h2>
 
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Git</li>
-      </ul>
-    </section>
+          <p style="text-align: left;">
+            <strong>Olá! Seja bem-vindo(a) ao meu espaço!</strong><br />
+            Sou um profissional com 9 anos de experiência em suporte técnico e atendimento ao usuário,
+            com forte capacidade de organização e gestão de chamados.
+          </p>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <article>
-        <h3>Projeto 1</h3>
-        <p>Descrição do projeto.</p>
-      </article>
-      <article>
-        <h3>Projeto 2</h3>
-        <p>Descrição do projeto.</p>
-      </article>
-    </section>
+          <p style="text-align: left;">
+            Tenho conhecimento avançado no pacote Office, atuando na organização e otimização
+            de processos administrativos, sempre com foco em eficiência e praticidade.
+          </p>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: exemplo@email.com</p>
-    </section>
+          <p style="text-align: left;">
+            Também possuo experiência no suporte a treinamentos de novos colaboradores,
+            garantindo uma integração eficiente e contribuindo diretamente para o bom funcionamento das operações.
+          </p>
+
+          <p style="text-align: left;">
+            Sou proativo, analítico e muito organizado — aprendo rápido e me adapto bem a ambientes dinâmicos e
+            desafiadores.
+          </p>
+        </section>
+      </div>
+    </aside>
+
+    <article>
+      <img src="Leonardo.png" alt="foto" />
+    </article>
   </main>
 
-  <aside>
-    <h2>Redes Sociais</h2>
-    <ul>
-      <li><a href="#">LinkedIn</a></li>
-      <li><a href="#">GitHub</a></li>
+  <!-- hard skills -->
+  <section id="habilidades-tecnicas" class="section">
+    <h2>💻 Habilidades Técnicas (Hard Skills)</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>🖥️ <strong>Sistemas Operacionais:</strong> Windows e Linux</li>
+      <li>🔄 <strong>ITSM:</strong> Experiência com sistemas de abertura e gestão de chamados</li>
+      <li>💻 <strong>Desenvolvimento Web:</strong> HTML, CSS, Git, JavaScript</li>
+      <li>📈 <strong>Pacote Office:</strong> Excel, Word, PowerPoint</li>
+      <li>🎧 <strong>Suporte Técnico:</strong> Diagnóstico e resolução de problemas</li>
+      <li>🧠 <strong>Treinamento de Colaboradores:</strong> Suporte e integração</li>
     </ul>
-  </aside>
+  </section>
+
+  <!-- soft skills -->
+  <section id="habilidades-comportamentais" class="section">
+    <h2>🌟 Habilidades Comportamentais (Soft Skills)</h2>
+    <ul style="list-style: none; padding: 0;">
+      <li>🗣️ <strong>Comunicação Eficaz:</strong> Interação com diferentes perfis, garantindo clareza nas instruções.
+      </li>
+      <li>🕒 <strong>Responsabilidade e Comprometimento:</strong> Foco no cumprimento de prazos e metas com qualidade.
+      </li>
+      <li>🤝 <strong>Relacionamento Interpessoal e Empatia:</strong> Colaboração e ambiente de trabalho saudável.</li>
+      <li>🧠 <strong>Capacidade Analítica e Proatividade:</strong> Diagnóstico de causas-raiz e soluções ágeis.</li>
+      <li>👥 <strong>Trabalho em Equipe:</strong> Troca constante de conhecimentos e superação de desafios técnicos.
+      </li>
+    </ul>
+  </section>
+
+  <!-- redes sociais e contato -->
+  <section id="contato" class="section">
+    <div class="social-media">
+      <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+      <a href="https://github.com/seu-perfil" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a href="https://instagram.com/seu-perfil" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="bx bxl-instagram"></i>
+      </a>
+    </div>
+
+    <div class="contact-info">
+      <p>📞 Telefone: (00) 00000-0000</p>
+      <p>📧 E-mail: exemplo@email.com</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
   </footer>
 
 </body>
+
 </html>
